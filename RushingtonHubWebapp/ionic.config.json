@@ -1,0 +1,7 @@
+{
+  "name": "rushingtonhub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

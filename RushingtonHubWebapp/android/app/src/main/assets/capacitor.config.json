@@ -1,0 +1,8 @@
+{
+	"appId": "io.ionic.rushingtonhub",
+	"appName": "Rushington Hub",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "public",
+	"cordova": {}
+}

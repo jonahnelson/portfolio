@@ -1,0 +1,80 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^3.2.4",
+    "@capacitor/core": "^3.2.4",
+    "@craco/craco": "^6.4.3",
+    "@headlessui/react": "^1.2.0",
+    "@heroicons/react": "^1.0.1",
+    "@ionic/angular": "^5.8.3",
+    "@material-ui/core": "^4.12.3",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.15.0",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "axios-cancel-plugin": "^1.0.4",
+    "capacitor": "^0.5.5",
+    "chart.js": "^3.2.1",
+    "check-broken-links": "^2.0.4",
+    "concurrently": "^6.5.1",
+    "cors": "^2.8.5",
+    "craco": "0.0.3",
+    "firebase": "^8.9.1",
+    "jsonwebtoken": "^8.5.1",
+    "linkinator": "^2.13.6",
+    "node-notifier": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.3",
+    "react-dom": "^17.0.2",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-login-github": "^1.0.7",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scroll": "^1.8.2",
+    "react-switch": "^6.0.0",
+    "sequelize": "^6.16.1",
+    "tailwind-scrollbar-hide": "^1.0.3",
+    "tedious": "^14.3.0",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.2.4",
+    "autoprefixer": "^9.8.6",
+    "broken-link-checker": "^0.7.8",
+    "postcss": "^7.0.35",
+    "react-scripts": "4.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
+  }
+}

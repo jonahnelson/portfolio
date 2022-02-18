@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd9b489f-cf8c-4e29-9978-3bff22c31dcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AverageStatsBoard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BillingForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Card.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CheckoutForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FullContactInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/GraphBoard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Helpers/PeopleItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Helpers/PeopleList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Helpers/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Helpers/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Helpers/SiteItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Helpers/SiteList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Lighthouse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SuccessPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ViewSubscription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/LargePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/LargePanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SmallPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SmallPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zGDuCbBIWZajmg6WMYhS3lOhoS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd9b489f-cf8c-4e29-9978-3bff22c31dcd" name="Default Changelist" comment="" />
+      <created>1633765750356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633765750356</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633766316293">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1633766316293" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1633765833692">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1633765833692" />
+  </component>
+</project>
