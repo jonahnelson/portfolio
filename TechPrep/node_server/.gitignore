@@ -1,0 +1,3 @@
+#ignore individual routing files
+packagelock.json
+/node_modules/bson/*

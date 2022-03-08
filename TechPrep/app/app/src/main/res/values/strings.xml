@@ -1,0 +1,73 @@
+<resources>
+    <!--Android manifest strings start-->
+    <string name="app_name">Tech Prep</string>
+    <string name="addQ">Add Questions</string>
+    <string name="Rank_Questions">Rank Questions</string>
+    <string name="Reported_Questions">Reported Questions</string>
+    <string name="Resolve_Reported_Question">Resolve Reported Question</string>
+    <string name="Edit_Question">Edit Question</string>
+    <string name="Home">Home</string>
+    <string name="Record_Video">Record Video</string>
+    <string name="Flashcards">Flashcards</string>
+    <string name="Resources">Resources</string>
+    <!--Android manifest strings end-->
+
+    <!--Flashcards screen start-->
+    <string name="Get_Question">Get Question</string>
+    <string name="new_Question">Get New Question</string>
+    <string name="Get_Answer">Show Answer</string>
+    <string name="hide_Answer">Hide Answer</string>
+    <string name="hidden_Answer">Answer Hidden</string>
+    <!--Flashcards screen end-->
+
+    <string name="view_user_comments">Answer Hidden</string>
+
+    <!--Add Questions screen start-->
+    <string name="enterQuestionAnswer">Enter a new question and answer:</string>
+    <string name="enterTechnicalQuestion">Enter a new technical question:</string>
+    <string name="newFlashcardSuccess">Your new flashcard has been added!</string>
+    <string name="newTechnicalSuccess">Your new technical question has been added!</string>
+    <string name="failure">Failure to add!</string>
+    <string name="profanity">Your question or answer contains profanity. Please try again.</string>
+    <string name="empty_field">Your question or answer is blank. Please try again</string>
+    <string name="repeat_question">This question already exists. Please submit a different one.</string>
+    <!--Add Questions screen end-->
+
+    <!--Rank Questions screen start-->
+    <string name="rankSuccess">The question has successfully been ranked!</string>
+    <string name="rankFailure">Failure to rank!</string>
+    <string name="newQuestionFailure">Failure to retrieve new question!</string>
+    <!--Rank Questions screen end-->
+
+    <!--Other strings start-->
+    <string name="open">Open</string>
+    <!-- Message to display while video is buffering. -->
+    <string name="buffering_string">Buffering&#8230;</string>
+
+    <!-- Message to display when video is finished playing. -->
+    <string name="toast_message">Playback completed.</string>
+
+
+    <string name="close">Close</string>
+    <!--Other strings end-->
+
+    <!--ServerURL/Port-->
+    <string name="serverURL">http://ukko.d.umn.edu:12389</string>
+    <string name="view_user">View User</string>
+    <string name="previous_comment">Previous Comment</string>
+    <string name="next_comment">Next Comment</string>
+    <string name="view_admin">View Admin</string>
+    <string name="comments">Comments</string>
+    <string name="enter_a_rank_for_this_question">Enter a rank for this question:</string>
+    <string name="_10">-/10</string>
+    <string name="submit">Submit</string>
+    <string name="View_Rank">View Rank</string>
+    <string name = "new_flash_q">New Flashcard Question</string>
+    <string name="new_tech_q">New Technical Question</string>
+    <string name="rate_question">Rate Question</string>
+    <string name="report_question">Report Question</string>
+    <string name="add_comment_to_report">Add comment to report</string>
+    <string name="question_edited">The question has successfully been edited! Click on \"Keep Question\" to remove the report from this question"</string>
+    <string name="get_videos">Get Videos</string>
+
+</resources>

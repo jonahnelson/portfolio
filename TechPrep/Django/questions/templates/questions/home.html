@@ -1,0 +1,178 @@
+{% extends "questions/layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<div class="container">
+  <h1>Tech Prep Online Interface</h1>
+  <div class="card-deck" width="100%">
+    <div class="card-columns">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Flashcard Functions</h5>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/create-question-flash/'">Create Question</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#CreateFlashQuestions">?</button>
+          </div>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/rank-question-flash/'">Rank Question</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#RankQuestionFlash">?</button>
+          </div>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/view-question-flash/'">View Questions</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#ViewQuestionFlash">?</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tech Functions</h5>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/create-question-tech/'">Create Question</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#CreateTechQuestions">?</button>
+          </div>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/rank-question-tech/'">Rank Question</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#RankQuestionTech">?</button>
+          </div>
+
+          <div class="btn-group special" role="group">
+            <button type="button" class="btn btn-secondary" onclick="location.href='/view-question-tech/'">View Questions</button>
+            <button type="button" class="btn btn-secondary helptextbutton" data-toggle="modal" data-target="#ViewTechQuestions">?</button>
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+
+<!-- modals -->
+<div class="modal fade" id="RankQuestionFlash" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example">Rank Flash Question</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          This form will rank a flash question that is in the TechPrep question database. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="RankQuestionTech" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example">Rank Tech Question</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          This form will rank a Tech question that is in the TechPrep question database.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="ViewQuestionFlash" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example">View Flashcard Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          This will present a table to view all of the Flashcard questions in the database.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="ViewTechQuestions" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example">View Technical Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+          This will present a table to view all of the Technical questions in the database.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="CreateTechQuestions" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="example">Create Technical Questions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body">
+            This will create a technical question in the Tech Question database.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="CreateFlashQuestions" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="example">Create Flashcard Questions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              This will create a flashcard question in the Flash Question database.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'questions/home.css' %}"/>
+<script src="{% static 'questions/home.js' %}"></script>
+{% endblock %}

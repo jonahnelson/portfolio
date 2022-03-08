@@ -1,0 +1,40 @@
+{% extends "questions/layout.html" %}
+{% load crispy_forms_tags %}
+{% crispy RankTechForm RankTechForm.helper %}
+{% block title %}
+Rank Technical
+{% endblock %}
+{% block content %}
+<div class="container">
+    <hr>
+    <h1>Rank Technical Card</h1>
+    <div class="row">
+        <div class="col" style="width: 18rem;">
+        <p>This will rank a Technical Card for the Tech Prep Android Application</p>
+        </div>
+    </div>
+
+    {% if error_message %}
+    <div class="alert alert-danger" role="alert">
+        <strong>Error: </strong>{{ error_message }}
+    </div>
+    {% endif %}
+    {% if success_message %}
+    <div class="alert alert-success" role="alert">
+        <strong>Success: </strong>{{ success_message }}
+    </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col" style="width: 18rem;">
+            {% crispy form %}
+        </div>
+    </div>
+</div>
+<style>
+    .custom-radio{
+    display:inline-block;
+    margin-left: 5px;
+    }
+</style>
+{% endblock %}

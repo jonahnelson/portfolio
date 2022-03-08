@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cs4531.interviewapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AddQuestionsActivity"
+            android:label="@string/addQ" />
+        <activity
+            android:name=".RankQuestionsActivity"
+            android:label="@string/Rank_Questions" />
+        <activity
+            android:name=".ReportedQuestionsAdminActivity"
+            android:label="@string/Reported_Questions" />
+        <activity
+            android:name=".ResolveReportedQuestionActivity"
+            android:label="@string/Resolve_Reported_Question" />
+        <activity
+            android:name=".EditQuestionActivity"
+            android:label="@string/Edit_Question" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/Home" />
+        <activity
+            android:name=".RecordVideoActivity"
+            android:label="@string/Record_Video" />
+        <activity
+            android:name=".GetVideoActivity"
+            android:label="Get Video" />
+        <activity
+            android:name=".ReportQuestionActivity"
+            android:label="Report Question" />
+        <activity
+            android:name=".FlashcardsActivity"
+            android:label="@string/Flashcards" />
+        <activity
+            android:name=".ViewRankActivity"
+            android:label="@string/View_Rank" />
+        <activity
+            android:name=".ResourcesActivity"
+            android:label="@string/Resources" />
+        <activity
+            android:name=".PlayVideoActivity"
+            android:label="Play Video"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"    />
+        <activity
+            android:name=".LogIn"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

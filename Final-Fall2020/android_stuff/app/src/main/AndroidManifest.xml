@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.cs4531.finalsoftware">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/AppTheme">
+
+        <activity
+                android:name="com.example.sasha.finalsoftware.ui.MainActivity"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.example.sasha.finalsoftware.ui.CompareNameActivity"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.example.sasha.finalsoftware.ui.SearchActivity"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.example.sasha.finalsoftware.ui.WildcardActivity"
+                android:label="@string/app_name" />
+        <activity
+            android:name="com.example.sasha.finalsoftware.ui.NamesListedActivity"
+            android:label="@string/app_name" />
+        <activity
+                android:name="com.example.sasha.finalsoftware.ui.LoginActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

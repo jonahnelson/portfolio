@@ -1,0 +1,1067 @@
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] MongoDB starting : pid=8026 port=12113 dbpath=./mongo 64-bit host=ukko
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] db version v3.6.9
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] modules: none
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] build environment:
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-19T18:37:08.885-0600 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12113 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-02-19T18:37:08.888-0600 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-02-19T18:37:10.453-0600 I STORAGE  [initandlisten] WiredTiger message [1582159030:453961][8026:0x7f368a4f6200], txn-recover: Set global recovery timestamp: 0
+2020-02-19T18:37:10.488-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:37:10.488-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-19T18:37:10.488-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-19T18:37:10.488-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:37:10.490-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:37:10.490-0600 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-02-19T18:37:10.490-0600 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-02-19T18:37:10.490-0600 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-02-19T18:37:10.490-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:37:10.491-0600 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 4f482f35-835d-4b31-b0d9-8fc3f26fcaf8
+2020-02-19T18:37:10.507-0600 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2020-02-19T18:37:10.511-0600 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 062e454c-78bd-4999-a24f-0f6e36bca197
+2020-02-19T18:37:10.529-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-02-19T18:37:10.530-0600 I NETWORK  [initandlisten] waiting for connections on port 12113
+2020-02-19T18:37:10.530-0600 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 0151a187-e388-44ac-a34f-511adb0f9b8c
+2020-02-19T18:37:10.555-0600 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2020-02-19T18:37:10.555-0600 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-02-19T18:37:10.560-0600 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2020-02-19T18:37:13.380-0600 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-02-19T18:37:13.381-0600 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-02-19T18:37:13.381-0600 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12113.sock
+2020-02-19T18:37:13.381-0600 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-02-19T18:37:13.386-0600 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-02-19T18:37:13.534-0600 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-02-19T18:37:13.535-0600 I CONTROL  [signalProcessingThread] now exiting
+2020-02-19T18:37:13.536-0600 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-02-19T18:38:07.142-0600 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] MongoDB starting : pid=8064 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] db version v3.6.9
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] modules: none
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] build environment:
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-19T18:38:07.150-0600 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-02-19T18:38:07.153-0600 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-02-19T18:38:07.154-0600 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-02-19T18:38:08.832-0600 I STORAGE  [initandlisten] WiredTiger message [1582159088:832139][8064:0x7faa30f1e200], txn-recover: Main recovery loop: starting at 1/20992
+2020-02-19T18:38:08.940-0600 I STORAGE  [initandlisten] WiredTiger message [1582159088:940159][8064:0x7faa30f1e200], txn-recover: Recovering log 1 through 2
+2020-02-19T18:38:09.018-0600 I STORAGE  [initandlisten] WiredTiger message [1582159089:18236][8064:0x7faa30f1e200], txn-recover: Recovering log 2 through 2
+2020-02-19T18:38:09.071-0600 I STORAGE  [initandlisten] WiredTiger message [1582159089:71853][8064:0x7faa30f1e200], txn-recover: Set global recovery timestamp: 0
+2020-02-19T18:38:09.107-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:38:09.108-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-19T18:38:09.108-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-19T18:38:09.108-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:38:09.109-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:38:09.109-0600 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-02-19T18:38:09.109-0600 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-02-19T18:38:09.109-0600 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-02-19T18:38:09.109-0600 I CONTROL  [initandlisten] 
+2020-02-19T18:38:09.125-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-02-19T18:38:09.126-0600 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-02-19T18:38:39.578-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54056 #1 (1 connection now open)
+2020-02-19T18:38:39.579-0600 I NETWORK  [conn1] received client metadata from 47.32.0.82:54056 conn1: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:38:39.763-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54057 #2 (2 connections now open)
+2020-02-19T18:38:39.770-0600 I NETWORK  [conn2] received client metadata from 47.32.0.82:54057 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:38:40.720-0600 I NETWORK  [conn1] end connection 47.32.0.82:54056 (1 connection now open)
+2020-02-19T18:38:40.755-0600 I NETWORK  [conn2] end connection 47.32.0.82:54057 (0 connections now open)
+2020-02-19T18:38:42.146-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54061 #3 (1 connection now open)
+2020-02-19T18:38:42.153-0600 I NETWORK  [conn3] received client metadata from 47.32.0.82:54061 conn3: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:38:42.354-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54062 #4 (2 connections now open)
+2020-02-19T18:38:42.360-0600 I NETWORK  [conn4] received client metadata from 47.32.0.82:54062 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:38:49.939-0600 I NETWORK  [conn3] end connection 47.32.0.82:54061 (1 connection now open)
+2020-02-19T18:38:49.971-0600 I NETWORK  [conn4] end connection 47.32.0.82:54062 (0 connections now open)
+2020-02-19T18:38:51.792-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54068 #5 (1 connection now open)
+2020-02-19T18:38:51.804-0600 I NETWORK  [conn5] received client metadata from 47.32.0.82:54068 conn5: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:38:52.008-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54069 #6 (2 connections now open)
+2020-02-19T18:38:52.014-0600 I NETWORK  [conn6] received client metadata from 47.32.0.82:54069 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:39:11.275-0600 I STORAGE  [conn5] createCollection: config.Restaurants with generated UUID: 53a3926a-e8a7-41c8-b1aa-bfa2e7e7a43b
+2020-02-19T18:39:32.612-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54095 #7 (3 connections now open)
+2020-02-19T18:39:32.620-0600 I NETWORK  [conn7] received client metadata from 47.32.0.82:54095 conn7: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:39:32.819-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54097 #8 (4 connections now open)
+2020-02-19T18:39:32.825-0600 I NETWORK  [conn8] received client metadata from 47.32.0.82:54097 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T18:52:53.379-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54644 #9 (5 connections now open)
+2020-02-19T18:52:53.384-0600 I NETWORK  [conn9] received client metadata from 47.32.0.82:54644 conn9: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-19T18:54:27.419-0600 I NETWORK  [conn9] end connection 47.32.0.82:54644 (4 connections now open)
+2020-02-19T18:54:32.058-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:54709 #10 (5 connections now open)
+2020-02-19T18:54:32.064-0600 I NETWORK  [conn10] received client metadata from 47.32.0.82:54709 conn10: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-19T19:00:46.515-0600 I NETWORK  [conn10] end connection 47.32.0.82:54709 (4 connections now open)
+2020-02-19T19:03:18.943-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:55088 #11 (5 connections now open)
+2020-02-19T19:03:18.949-0600 I NETWORK  [conn11] received client metadata from 47.32.0.82:55088 conn11: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-19T19:03:19.004-0600 I NETWORK  [conn11] end connection 47.32.0.82:55088 (4 connections now open)
+2020-02-19T19:04:25.581-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:55138 #12 (5 connections now open)
+2020-02-19T19:04:25.587-0600 I NETWORK  [conn12] received client metadata from 47.32.0.82:55138 conn12: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-19T19:53:22.389-0600 I STORAGE  [conn12] createCollection: config.Test with generated UUID: 16bcfb5a-caef-4d43-a6cc-45559df7fd5a
+2020-02-19T19:54:39.048-0600 I STORAGE  [conn12] createCollection: config.test with generated UUID: 9f89a803-a288-42f8-a703-99970b7bfd0a
+2020-02-19T19:55:02.900-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:56822 #13 (6 connections now open)
+2020-02-19T19:55:02.911-0600 I NETWORK  [conn13] received client metadata from 47.32.0.82:56822 conn13: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T19:55:03.141-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:56824 #14 (7 connections now open)
+2020-02-19T19:55:03.152-0600 I NETWORK  [conn14] received client metadata from 47.32.0.82:56824 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-19T19:56:59.344-0600 I NETWORK  [conn12] end connection 47.32.0.82:55138 (6 connections now open)
+2020-02-19T19:57:05.525-0600 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2020-02-19T19:57:05.525-0600 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-02-19T19:57:05.526-0600 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-02-19T19:57:05.526-0600 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-02-19T19:57:05.535-0600 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-02-19T19:57:05.633-0600 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-02-19T19:57:05.634-0600 I CONTROL  [signalProcessingThread] now exiting
+2020-02-19T19:57:05.634-0600 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-02-26T18:09:39.832-0600 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] MongoDB starting : pid=39450 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] db version v3.6.9
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] modules: none
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] build environment:
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-26T18:09:39.838-0600 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-02-26T18:09:39.843-0600 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-02-26T18:09:39.844-0600 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-02-26T18:09:41.454-0600 I STORAGE  [initandlisten] WiredTiger message [1582762181:454657][39450:0x7f1e86d84200], txn-recover: Main recovery loop: starting at 2/46464
+2020-02-26T18:09:41.623-0600 I STORAGE  [initandlisten] WiredTiger message [1582762181:623334][39450:0x7f1e86d84200], txn-recover: Recovering log 2 through 3
+2020-02-26T18:09:41.725-0600 I STORAGE  [initandlisten] WiredTiger message [1582762181:725346][39450:0x7f1e86d84200], txn-recover: Recovering log 3 through 3
+2020-02-26T18:09:41.786-0600 I STORAGE  [initandlisten] WiredTiger message [1582762181:786764][39450:0x7f1e86d84200], txn-recover: Set global recovery timestamp: 0
+2020-02-26T18:09:41.837-0600 I CONTROL  [initandlisten] 
+2020-02-26T18:09:41.837-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-26T18:09:41.837-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-26T18:09:41.837-0600 I CONTROL  [initandlisten] 
+2020-02-26T18:09:41.838-0600 I CONTROL  [initandlisten] 
+2020-02-26T18:09:41.838-0600 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-02-26T18:09:41.838-0600 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-02-26T18:09:41.838-0600 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-02-26T18:09:41.839-0600 I CONTROL  [initandlisten] 
+2020-02-26T18:09:41.864-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-02-26T18:09:41.864-0600 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-02-26T18:10:43.907-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:57057 #1 (1 connection now open)
+2020-02-26T18:10:43.922-0600 I NETWORK  [conn1] received client metadata from 47.32.0.82:57057 conn1: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T19:39:42.625-0600 I STORAGE  [conn1] createCollection: config.Test2 with generated UUID: 747dd74d-5378-4e8a-b122-99cd54f8b9d6
+2020-02-26T19:41:55.162-0600 I STORAGE  [conn1] createCollection: config.Test3 with generated UUID: 5b52fb67-0b29-43d0-a1bc-6dc5f853cd9b
+2020-02-26T19:43:00.187-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62085 #2 (2 connections now open)
+2020-02-26T19:43:00.200-0600 I NETWORK  [conn2] received client metadata from 47.32.0.82:62085 conn2: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T19:43:00.478-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62086 #3 (3 connections now open)
+2020-02-26T19:43:00.479-0600 I NETWORK  [conn3] received client metadata from 47.32.0.82:62086 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T19:43:01.210-0600 I NETWORK  [conn2] end connection 47.32.0.82:62085 (2 connections now open)
+2020-02-26T19:43:01.235-0600 I NETWORK  [conn3] end connection 47.32.0.82:62086 (1 connection now open)
+2020-02-26T19:43:03.759-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62090 #4 (2 connections now open)
+2020-02-26T19:43:03.766-0600 I NETWORK  [conn4] received client metadata from 47.32.0.82:62090 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T19:43:03.960-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62092 #5 (3 connections now open)
+2020-02-26T19:43:03.961-0600 I NETWORK  [conn5] received client metadata from 47.32.0.82:62092 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T19:43:55.273-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T19:43:55.274-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (16bcfb5a-caef-4d43-a6cc-45559df7fd5a).
+2020-02-26T19:43:59.683-0600 I COMMAND  [conn4] CMD: drop config.Test2
+2020-02-26T19:43:59.683-0600 I STORAGE  [conn4] Finishing collection drop for config.Test2 (747dd74d-5378-4e8a-b122-99cd54f8b9d6).
+2020-02-26T19:44:09.601-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:44:09.602-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (5b52fb67-0b29-43d0-a1bc-6dc5f853cd9b).
+2020-02-26T19:44:13.625-0600 I COMMAND  [conn4] CMD: drop config.test
+2020-02-26T19:44:13.625-0600 I STORAGE  [conn4] Finishing collection drop for config.test (9f89a803-a288-42f8-a703-99970b7bfd0a).
+2020-02-26T19:44:20.053-0600 I STORAGE  [conn1] createCollection: config.Test with generated UUID: 8c5ffe80-f032-4cd0-ad5f-d1e3a57ca8c3
+2020-02-26T19:44:28.050-0600 I NETWORK  [conn1] end connection 47.32.0.82:57057 (2 connections now open)
+2020-02-26T19:44:41.908-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T19:44:41.909-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (8c5ffe80-f032-4cd0-ad5f-d1e3a57ca8c3).
+2020-02-26T19:44:43.805-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62163 #6 (3 connections now open)
+2020-02-26T19:44:43.811-0600 I NETWORK  [conn6] received client metadata from 47.32.0.82:62163 conn6: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T19:44:43.839-0600 I STORAGE  [conn6] createCollection: config.Test with generated UUID: 13769f52-4730-4d28-b796-6754c87bce30
+2020-02-26T19:45:25.698-0600 I STORAGE  [conn6] createCollection: config.Test3 with generated UUID: db51da9e-5ce2-467e-af6f-f9cb1d946ad2
+2020-02-26T19:46:09.945-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:46:09.946-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (db51da9e-5ce2-467e-af6f-f9cb1d946ad2).
+2020-02-26T19:46:24.162-0600 I STORAGE  [conn6] createCollection: config.Test3 with generated UUID: de015f1c-9ed8-4401-8528-5ddf38bbdd7f
+2020-02-26T19:47:12.337-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:47:12.338-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (de015f1c-9ed8-4401-8528-5ddf38bbdd7f).
+2020-02-26T19:48:11.478-0600 I STORAGE  [conn6] createCollection: config.Test3 with generated UUID: 57ca90fd-9d44-43f3-ad4a-34e8d0e47c54
+2020-02-26T19:48:59.220-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:48:59.221-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (57ca90fd-9d44-43f3-ad4a-34e8d0e47c54).
+2020-02-26T19:50:32.750-0600 I STORAGE  [conn6] createCollection: config.Test3 with generated UUID: 4313bf40-bcfb-468a-a9f4-5ce6a6f66a14
+2020-02-26T19:51:20.495-0600 I NETWORK  [conn6] end connection 47.32.0.82:62163 (2 connections now open)
+2020-02-26T19:54:04.467-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:54:04.468-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (4313bf40-bcfb-468a-a9f4-5ce6a6f66a14).
+2020-02-26T19:56:27.340-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:62734 #7 (3 connections now open)
+2020-02-26T19:56:27.345-0600 I NETWORK  [conn7] received client metadata from 47.32.0.82:62734 conn7: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T19:57:21.402-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 08a6568c-99b2-4e36-9853-731897808c21
+2020-02-26T19:57:40.150-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:57:40.151-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (08a6568c-99b2-4e36-9853-731897808c21).
+2020-02-26T19:58:09.565-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 558b74d2-54f4-4720-a72f-0308c0e2c161
+2020-02-26T19:58:38.977-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:58:38.978-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (558b74d2-54f4-4720-a72f-0308c0e2c161).
+2020-02-26T19:58:44.230-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: d7fbb33f-baa3-4916-8261-1be5d7bc7dc3
+2020-02-26T19:59:02.187-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T19:59:02.188-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (d7fbb33f-baa3-4916-8261-1be5d7bc7dc3).
+2020-02-26T19:59:05.993-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 9d57cf68-f17d-45c9-b222-9868984cb4ec
+2020-02-26T20:02:53.231-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:02:53.231-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (9d57cf68-f17d-45c9-b222-9868984cb4ec).
+2020-02-26T20:03:03.858-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 0ea09050-d20b-4165-9170-cc8a15dcdc59
+2020-02-26T20:20:53.243-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:20:53.245-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (0ea09050-d20b-4165-9170-cc8a15dcdc59).
+2020-02-26T20:21:16.289-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 0a6a6b7f-2222-4f8d-bc6a-a569422da0b1
+2020-02-26T20:22:42.159-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:22:42.160-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (0a6a6b7f-2222-4f8d-bc6a-a569422da0b1).
+2020-02-26T20:23:36.947-0600 I STORAGE  [conn7] createCollection: config.Test3 with generated UUID: 8d7c48eb-86a2-4d88-8ab0-5d7ecfa577ca
+2020-02-26T20:27:32.063-0600 I NETWORK  [conn7] end connection 47.32.0.82:62734 (2 connections now open)
+2020-02-26T20:27:47.421-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:27:47.422-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (8d7c48eb-86a2-4d88-8ab0-5d7ecfa577ca).
+2020-02-26T20:27:53.066-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64229 #8 (3 connections now open)
+2020-02-26T20:27:53.066-0600 I NETWORK  [conn8] received client metadata from 47.32.0.82:64229 conn8: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:27:53.098-0600 I STORAGE  [conn8] createCollection: config.Test3 with generated UUID: 1f6ee826-0a86-4493-a876-1e1c17e52e95
+2020-02-26T20:27:53.159-0600 I NETWORK  [conn8] end connection 47.32.0.82:64229 (2 connections now open)
+2020-02-26T20:28:10.122-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64246 #9 (3 connections now open)
+2020-02-26T20:28:10.128-0600 I NETWORK  [conn9] received client metadata from 47.32.0.82:64246 conn9: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:28:22.023-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:28:22.024-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (1f6ee826-0a86-4493-a876-1e1c17e52e95).
+2020-02-26T20:28:37.822-0600 I STORAGE  [conn9] createCollection: config.Test3 with generated UUID: 0f5028fb-2343-4a38-a889-4cecd373f50c
+2020-02-26T20:28:37.886-0600 I NETWORK  [conn9] end connection 47.32.0.82:64246 (2 connections now open)
+2020-02-26T20:31:21.933-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64397 #10 (3 connections now open)
+2020-02-26T20:31:21.938-0600 I NETWORK  [conn10] received client metadata from 47.32.0.82:64397 conn10: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:31:41.747-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:31:41.747-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (0f5028fb-2343-4a38-a889-4cecd373f50c).
+2020-02-26T20:31:47.366-0600 I STORAGE  [conn10] createCollection: config.Test3 with generated UUID: 5541e145-268b-498d-8f6a-708055c791ba
+2020-02-26T20:31:47.429-0600 I NETWORK  [conn10] end connection 47.32.0.82:64397 (2 connections now open)
+2020-02-26T20:34:48.046-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64576 #11 (3 connections now open)
+2020-02-26T20:34:48.052-0600 I NETWORK  [conn11] received client metadata from 47.32.0.82:64576 conn11: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:34:58.415-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64587 #12 (4 connections now open)
+2020-02-26T20:34:58.423-0600 I NETWORK  [conn12] received client metadata from 47.32.0.82:64587 conn12: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T20:34:58.620-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64588 #13 (5 connections now open)
+2020-02-26T20:34:58.628-0600 I NETWORK  [conn13] received client metadata from 47.32.0.82:64588 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-02-26T20:37:35.774-0600 I NETWORK  [conn11] end connection 47.32.0.82:64576 (4 connections now open)
+2020-02-26T20:37:49.205-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:37:49.205-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (5541e145-268b-498d-8f6a-708055c791ba).
+2020-02-26T20:37:54.201-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64749 #14 (5 connections now open)
+2020-02-26T20:37:54.201-0600 I NETWORK  [conn14] received client metadata from 47.32.0.82:64749 conn14: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:37:54.235-0600 I STORAGE  [conn14] createCollection: config.Test3 with generated UUID: d06714b9-f9ae-42d6-86c8-36cbfd94afce
+2020-02-26T20:37:54.310-0600 I NETWORK  [conn14] end connection 47.32.0.82:64749 (4 connections now open)
+2020-02-26T20:39:33.012-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:39:33.013-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (d06714b9-f9ae-42d6-86c8-36cbfd94afce).
+2020-02-26T20:39:46.596-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:64837 #15 (5 connections now open)
+2020-02-26T20:39:46.596-0600 I NETWORK  [conn15] received client metadata from 47.32.0.82:64837 conn15: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T20:39:46.630-0600 I STORAGE  [conn15] createCollection: config.Test3 with generated UUID: a0f3b4c0-68c3-4cbb-8a9c-ad50ccbb90c2
+2020-02-26T20:41:02.037-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:41:02.038-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (a0f3b4c0-68c3-4cbb-8a9c-ad50ccbb90c2).
+2020-02-26T20:41:23.914-0600 I STORAGE  [conn15] createCollection: config.Test3 with generated UUID: a01049bd-a827-4e2a-96a7-533cc45b63e9
+2020-02-26T20:57:46.832-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T20:57:46.833-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (a01049bd-a827-4e2a-96a7-533cc45b63e9).
+2020-02-26T21:00:21.962-0600 I NETWORK  [conn15] end connection 47.32.0.82:64837 (4 connections now open)
+2020-02-26T21:00:33.585-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1297 #16 (5 connections now open)
+2020-02-26T21:00:33.592-0600 I NETWORK  [conn16] received client metadata from 47.32.0.82:1297 conn16: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:00:33.622-0600 I STORAGE  [conn16] createCollection: config.Test3 with generated UUID: dd3be89f-d176-4e86-abd3-8bca47db151a
+2020-02-26T21:01:48.012-0600 I NETWORK  [conn16] end connection 47.32.0.82:1297 (4 connections now open)
+2020-02-26T21:01:59.081-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T21:01:59.082-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (dd3be89f-d176-4e86-abd3-8bca47db151a).
+2020-02-26T21:02:03.022-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1350 #17 (5 connections now open)
+2020-02-26T21:02:03.029-0600 I NETWORK  [conn17] received client metadata from 47.32.0.82:1350 conn17: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:02:03.057-0600 I STORAGE  [conn17] createCollection: config.Test3 with generated UUID: 16c1cddf-66b3-4d13-9b08-1acea721ad56
+2020-02-26T21:02:03.126-0600 I NETWORK  [conn17] end connection 47.32.0.82:1350 (4 connections now open)
+2020-02-26T21:03:22.145-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T21:03:22.146-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (16c1cddf-66b3-4d13-9b08-1acea721ad56).
+2020-02-26T21:03:31.301-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T21:03:31.301-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (13769f52-4730-4d28-b796-6754c87bce30).
+2020-02-26T21:03:43.553-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1443 #18 (5 connections now open)
+2020-02-26T21:03:43.559-0600 I NETWORK  [conn18] received client metadata from 47.32.0.82:1443 conn18: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:03:43.601-0600 I STORAGE  [conn18] createCollection: config.Test with generated UUID: ff11490a-685d-4a65-8d21-7405ad92a25a
+2020-02-26T21:03:43.684-0600 I NETWORK  [conn18] end connection 47.32.0.82:1443 (4 connections now open)
+2020-02-26T21:04:36.070-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T21:04:36.071-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (ff11490a-685d-4a65-8d21-7405ad92a25a).
+2020-02-26T21:04:40.196-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1483 #19 (5 connections now open)
+2020-02-26T21:04:40.203-0600 I NETWORK  [conn19] received client metadata from 47.32.0.82:1483 conn19: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:04:40.238-0600 I STORAGE  [conn19] createCollection: config.Test with generated UUID: 86e1ed86-17fb-4888-9c9a-b72b00d2548f
+2020-02-26T21:04:51.261-0600 I STORAGE  [conn19] createCollection: config.Test3 with generated UUID: fcdfdc01-9577-4aae-b697-c45a0894fd63
+2020-02-26T21:05:59.286-0600 I NETWORK  [conn19] end connection 47.32.0.82:1483 (4 connections now open)
+2020-02-26T21:06:11.678-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T21:06:11.678-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (fcdfdc01-9577-4aae-b697-c45a0894fd63).
+2020-02-26T21:06:14.919-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T21:06:14.919-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (86e1ed86-17fb-4888-9c9a-b72b00d2548f).
+2020-02-26T21:06:17.299-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1550 #20 (5 connections now open)
+2020-02-26T21:06:17.329-0600 I NETWORK  [conn20] received client metadata from 47.32.0.82:1550 conn20: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:06:17.358-0600 I STORAGE  [conn20] createCollection: config.Test with generated UUID: 223d91de-5fab-4638-9f5f-3624b52b03dc
+2020-02-26T21:06:17.428-0600 I NETWORK  [conn20] end connection 47.32.0.82:1550 (4 connections now open)
+2020-02-26T21:07:14.538-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T21:07:14.538-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (223d91de-5fab-4638-9f5f-3624b52b03dc).
+2020-02-26T21:07:18.581-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1589 #21 (5 connections now open)
+2020-02-26T21:07:18.581-0600 I NETWORK  [conn21] received client metadata from 47.32.0.82:1589 conn21: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:07:18.614-0600 I STORAGE  [conn21] createCollection: config.Test with generated UUID: 0dae8a45-3adb-4363-bcf2-f4557840ff21
+2020-02-26T21:07:18.699-0600 I NETWORK  [conn21] end connection 47.32.0.82:1589 (4 connections now open)
+2020-02-26T21:07:42.290-0600 I COMMAND  [conn4] CMD: drop config.Test
+2020-02-26T21:07:42.291-0600 I STORAGE  [conn4] Finishing collection drop for config.Test (0dae8a45-3adb-4363-bcf2-f4557840ff21).
+2020-02-26T21:07:44.614-0600 I NETWORK  [listener] connection accepted from 47.32.0.82:1609 #22 (5 connections now open)
+2020-02-26T21:07:44.614-0600 I NETWORK  [conn22] received client metadata from 47.32.0.82:1609 conn22: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 2.1.18" }
+2020-02-26T21:07:44.643-0600 I STORAGE  [conn22] createCollection: config.Test with generated UUID: 23bb4a49-cad8-4434-829a-0616c01fd55d
+2020-02-26T21:07:52.752-0600 I STORAGE  [conn22] createCollection: config.Test3 with generated UUID: 6b4390cc-e184-4f6b-84af-88ae057bc475
+2020-02-26T21:08:17.282-0600 I COMMAND  [conn4] CMD: drop config.Test3
+2020-02-26T21:08:17.282-0600 I STORAGE  [conn4] Finishing collection drop for config.Test3 (6b4390cc-e184-4f6b-84af-88ae057bc475).
+2020-02-26T21:08:25.959-0600 I STORAGE  [conn22] createCollection: config.Test3 with generated UUID: 63635f80-57ef-4dfa-8f0b-3482f2bd22e2
+2020-02-26T21:12:41.955-0600 I NETWORK  [conn12] end connection 47.32.0.82:64587 (4 connections now open)
+2020-02-26T21:12:41.994-0600 I NETWORK  [conn13] end connection 47.32.0.82:64588 (3 connections now open)
+2020-02-26T21:12:42.019-0600 I NETWORK  [conn4] end connection 47.32.0.82:62090 (2 connections now open)
+2020-02-26T21:12:42.019-0600 I NETWORK  [conn5] end connection 47.32.0.82:62092 (1 connection now open)
+2020-02-26T21:12:52.841-0600 I NETWORK  [conn22] end connection 47.32.0.82:1609 (0 connections now open)
+2020-02-26T21:12:58.186-0600 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2020-02-26T21:12:58.186-0600 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-02-26T21:12:58.186-0600 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-02-26T21:12:58.186-0600 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-02-26T21:12:58.196-0600 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-02-26T21:12:58.243-0600 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-02-26T21:12:58.245-0600 I CONTROL  [signalProcessingThread] now exiting
+2020-02-26T21:12:58.245-0600 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-03-18T19:58:30.208-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] MongoDB starting : pid=42067 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] modules: none
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] build environment:
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-18T19:58:30.213-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-18T19:58:30.219-0500 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-03-18T19:58:30.220-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-03-18T19:58:31.707-0500 I STORAGE  [initandlisten] WiredTiger message [1584579511:707881][42067:0x7ff98cfbc200], txn-recover: Main recovery loop: starting at 3/235904
+2020-03-18T19:58:31.847-0500 I STORAGE  [initandlisten] WiredTiger message [1584579511:847093][42067:0x7ff98cfbc200], txn-recover: Recovering log 3 through 4
+2020-03-18T19:58:31.937-0500 I STORAGE  [initandlisten] WiredTiger message [1584579511:937547][42067:0x7ff98cfbc200], txn-recover: Recovering log 4 through 4
+2020-03-18T19:58:31.995-0500 I STORAGE  [initandlisten] WiredTiger message [1584579511:995111][42067:0x7ff98cfbc200], txn-recover: Set global recovery timestamp: 0
+2020-03-18T19:58:32.048-0500 I CONTROL  [initandlisten] 
+2020-03-18T19:58:32.048-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-03-18T19:58:32.048-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-03-18T19:58:32.048-0500 I CONTROL  [initandlisten] 
+2020-03-18T19:58:32.049-0500 I CONTROL  [initandlisten] 
+2020-03-18T19:58:32.049-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-18T19:58:32.049-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-18T19:58:32.049-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-18T19:58:32.049-0500 I CONTROL  [initandlisten] 
+2020-03-18T19:58:32.069-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-03-18T19:58:32.070-0500 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-03-18T19:58:55.252-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4841 #1 (1 connection now open)
+2020-03-18T19:58:55.259-0500 I NETWORK  [conn1] received client metadata from 47.32.0.82:4841 conn1: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T19:58:55.355-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4842 #2 (2 connections now open)
+2020-03-18T19:58:55.356-0500 I STORAGE  [conn1] createCollection: AppNull.users with generated UUID: 1e798718-3a1f-4601-bdf8-27fbc4a50695
+2020-03-18T19:58:55.385-0500 I INDEX    [conn1] build index on: AppNull.users properties: { v: 2, unique: true, key: { email: 1 }, name: "email_1", ns: "AppNull.users", background: true }
+2020-03-18T19:58:55.385-0500 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2020-03-18T19:58:55.484-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4843 #3 (3 connections now open)
+2020-03-18T19:58:55.494-0500 I INDEX    [conn1] build index on: AppNull.users properties: { v: 2, unique: true, key: { username: 1 }, name: "username_1", ns: "AppNull.users", background: true }
+2020-03-18T19:58:55.494-0500 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2020-03-18T19:59:13.884-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4858 #4 (4 connections now open)
+2020-03-18T19:59:13.885-0500 I NETWORK  [conn4] received client metadata from 47.32.0.82:4858 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T19:59:14.082-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4859 #5 (5 connections now open)
+2020-03-18T19:59:14.082-0500 I NETWORK  [conn5] received client metadata from 47.32.0.82:4859 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:00:23.114-0500 I COMMAND  [conn4] CMD: drop config.Test
+2020-03-18T20:00:23.114-0500 I STORAGE  [conn4] Finishing collection drop for config.Test (23bb4a49-cad8-4434-829a-0616c01fd55d).
+2020-03-18T20:00:26.272-0500 I COMMAND  [conn4] CMD: drop config.Test3
+2020-03-18T20:00:26.272-0500 I STORAGE  [conn4] Finishing collection drop for config.Test3 (63635f80-57ef-4dfa-8f0b-3482f2bd22e2).
+2020-03-18T20:00:30.115-0500 I COMMAND  [conn4] CMD: drop config.Restaurants
+2020-03-18T20:00:30.115-0500 I STORAGE  [conn4] Finishing collection drop for config.Restaurants (53a3926a-e8a7-41c8-b1aa-bfa2e7e7a43b).
+2020-03-18T20:01:32.165-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4934 #6 (6 connections now open)
+2020-03-18T20:01:32.172-0500 I NETWORK  [conn6] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:4934 (connection id: 6)
+2020-03-18T20:01:32.172-0500 I NETWORK  [conn6] end connection 47.32.0.82:4934 (5 connections now open)
+2020-03-18T20:01:37.467-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4939 #7 (6 connections now open)
+2020-03-18T20:01:37.474-0500 I NETWORK  [conn7] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:4939 (connection id: 7)
+2020-03-18T20:01:37.474-0500 I NETWORK  [conn7] end connection 47.32.0.82:4939 (5 connections now open)
+2020-03-18T20:02:01.639-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4957 #8 (6 connections now open)
+2020-03-18T20:02:01.645-0500 I NETWORK  [conn8] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:4957 (connection id: 8)
+2020-03-18T20:02:01.645-0500 I NETWORK  [conn8] end connection 47.32.0.82:4957 (5 connections now open)
+2020-03-18T20:02:11.483-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4965 #9 (6 connections now open)
+2020-03-18T20:02:11.490-0500 I NETWORK  [conn9] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:4965 (connection id: 9)
+2020-03-18T20:02:11.490-0500 I NETWORK  [conn9] end connection 47.32.0.82:4965 (5 connections now open)
+2020-03-18T20:02:33.703-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4975 #10 (6 connections now open)
+2020-03-18T20:02:33.704-0500 I NETWORK  [conn10] received client metadata from 47.32.0.82:4975 conn10: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:02:33.899-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4976 #11 (7 connections now open)
+2020-03-18T20:02:33.899-0500 I NETWORK  [conn11] received client metadata from 47.32.0.82:4976 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:02:54.038-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4993 #12 (8 connections now open)
+2020-03-18T20:02:54.052-0500 I NETWORK  [conn12] received client metadata from 47.32.0.82:4993 conn12: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:02:54.258-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:4994 #13 (9 connections now open)
+2020-03-18T20:02:54.259-0500 I NETWORK  [conn13] received client metadata from 47.32.0.82:4994 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:03:02.610-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5002 #14 (10 connections now open)
+2020-03-18T20:03:02.617-0500 I NETWORK  [conn14] received client metadata from 47.32.0.82:5002 conn14: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:03:02.808-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5003 #15 (11 connections now open)
+2020-03-18T20:03:02.808-0500 I NETWORK  [conn15] received client metadata from 47.32.0.82:5003 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:03:18.261-0500 I NETWORK  [conn1] end connection 47.32.0.82:4841 (10 connections now open)
+2020-03-18T20:03:18.261-0500 I NETWORK  [conn2] end connection 47.32.0.82:4842 (9 connections now open)
+2020-03-18T20:03:18.267-0500 I NETWORK  [conn3] end connection 47.32.0.82:4843 (8 connections now open)
+2020-03-18T20:03:22.434-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5009 #16 (9 connections now open)
+2020-03-18T20:03:22.441-0500 I NETWORK  [conn16] received client metadata from 47.32.0.82:5009 conn16: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:03:22.556-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5010 #17 (10 connections now open)
+2020-03-18T20:03:29.635-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5016 #18 (11 connections now open)
+2020-03-18T20:03:29.636-0500 I NETWORK  [conn18] received client metadata from 47.32.0.82:5016 conn18: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:03:29.838-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5017 #19 (12 connections now open)
+2020-03-18T20:03:29.845-0500 I NETWORK  [conn19] received client metadata from 47.32.0.82:5017 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:05:19.996-0500 I NETWORK  [conn16] end connection 47.32.0.82:5009 (11 connections now open)
+2020-03-18T20:05:20.001-0500 I NETWORK  [conn17] end connection 47.32.0.82:5010 (10 connections now open)
+2020-03-18T20:05:25.209-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5099 #20 (11 connections now open)
+2020-03-18T20:05:25.216-0500 I NETWORK  [conn20] received client metadata from 47.32.0.82:5099 conn20: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:05:25.314-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5100 #21 (12 connections now open)
+2020-03-18T20:10:50.732-0500 I NETWORK  [conn20] end connection 47.32.0.82:5099 (10 connections now open)
+2020-03-18T20:10:50.732-0500 I NETWORK  [conn21] end connection 47.32.0.82:5100 (11 connections now open)
+2020-03-18T20:10:55.648-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5350 #22 (11 connections now open)
+2020-03-18T20:10:55.654-0500 I NETWORK  [conn22] received client metadata from 47.32.0.82:5350 conn22: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:10:55.749-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5351 #23 (12 connections now open)
+2020-03-18T20:11:23.975-0500 I NETWORK  [conn23] end connection 47.32.0.82:5351 (11 connections now open)
+2020-03-18T20:11:23.983-0500 I NETWORK  [conn22] end connection 47.32.0.82:5350 (10 connections now open)
+2020-03-18T20:11:27.994-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5368 #24 (11 connections now open)
+2020-03-18T20:11:28.008-0500 I NETWORK  [conn24] received client metadata from 47.32.0.82:5368 conn24: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:11:28.113-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5369 #25 (12 connections now open)
+2020-03-18T20:11:43.281-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5381 #26 (13 connections now open)
+2020-03-18T20:11:43.282-0500 I NETWORK  [conn26] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:5381 (connection id: 26)
+2020-03-18T20:11:43.282-0500 I NETWORK  [conn26] end connection 47.32.0.82:5381 (12 connections now open)
+2020-03-18T20:12:05.392-0500 I NETWORK  [conn24] end connection 47.32.0.82:5368 (11 connections now open)
+2020-03-18T20:12:05.392-0500 I NETWORK  [conn25] end connection 47.32.0.82:5369 (10 connections now open)
+2020-03-18T20:12:10.202-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5405 #27 (11 connections now open)
+2020-03-18T20:12:10.202-0500 I NETWORK  [conn27] received client metadata from 47.32.0.82:5405 conn27: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:12:10.300-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5406 #28 (12 connections now open)
+2020-03-18T20:14:08.590-0500 I NETWORK  [conn27] end connection 47.32.0.82:5405 (11 connections now open)
+2020-03-18T20:14:08.597-0500 I NETWORK  [conn28] end connection 47.32.0.82:5406 (10 connections now open)
+2020-03-18T20:15:47.932-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5542 #29 (11 connections now open)
+2020-03-18T20:15:47.938-0500 I NETWORK  [conn29] received client metadata from 47.32.0.82:5542 conn29: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:15:48.047-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5543 #30 (12 connections now open)
+2020-03-18T20:16:05.119-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5559 #31 (13 connections now open)
+2020-03-18T20:16:05.120-0500 I NETWORK  [conn31] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 47.32.0.82:5559 (connection id: 31)
+2020-03-18T20:16:05.120-0500 I NETWORK  [conn31] end connection 47.32.0.82:5559 (12 connections now open)
+2020-03-18T20:16:43.722-0500 I NETWORK  [conn30] end connection 47.32.0.82:5543 (11 connections now open)
+2020-03-18T20:16:43.728-0500 I NETWORK  [conn29] end connection 47.32.0.82:5542 (10 connections now open)
+2020-03-18T20:16:48.203-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5586 #32 (11 connections now open)
+2020-03-18T20:16:48.218-0500 I NETWORK  [conn32] received client metadata from 47.32.0.82:5586 conn32: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:16:48.321-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5587 #33 (12 connections now open)
+2020-03-18T20:17:28.925-0500 I NETWORK  [conn32] end connection 47.32.0.82:5586 (11 connections now open)
+2020-03-18T20:17:28.925-0500 I NETWORK  [conn33] end connection 47.32.0.82:5587 (10 connections now open)
+2020-03-18T20:17:33.157-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5616 #34 (11 connections now open)
+2020-03-18T20:17:33.163-0500 I NETWORK  [conn34] received client metadata from 47.32.0.82:5616 conn34: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:17:33.269-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5617 #35 (12 connections now open)
+2020-03-18T20:17:49.779-0500 I NETWORK  [conn34] end connection 47.32.0.82:5616 (11 connections now open)
+2020-03-18T20:17:49.786-0500 I NETWORK  [conn35] end connection 47.32.0.82:5617 (10 connections now open)
+2020-03-18T20:17:56.882-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5637 #36 (11 connections now open)
+2020-03-18T20:17:56.891-0500 I NETWORK  [conn36] received client metadata from 47.32.0.82:5637 conn36: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:17:56.985-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5638 #37 (12 connections now open)
+2020-03-18T20:18:27.239-0500 I NETWORK  [conn36] end connection 47.32.0.82:5637 (11 connections now open)
+2020-03-18T20:18:27.244-0500 I NETWORK  [conn37] end connection 47.32.0.82:5638 (10 connections now open)
+2020-03-18T20:18:31.634-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5657 #38 (11 connections now open)
+2020-03-18T20:18:31.639-0500 I NETWORK  [conn38] received client metadata from 47.32.0.82:5657 conn38: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:18:31.759-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5658 #39 (12 connections now open)
+2020-03-18T20:21:09.231-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-03-18T20:21:09.231-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-03-18T20:21:09.231-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-03-18T20:21:09.232-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-03-18T20:21:09.241-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-03-18T20:21:09.292-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-03-18T20:21:09.293-0500 I CONTROL  [signalProcessingThread] now exiting
+2020-03-18T20:21:09.293-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-03-18T20:23:29.721-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] MongoDB starting : pid=42753 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] modules: none
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] build environment:
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-18T20:23:29.728-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-18T20:23:29.731-0500 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-03-18T20:23:29.732-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-03-18T20:23:31.042-0500 I STORAGE  [initandlisten] WiredTiger message [1584581011:42678][42753:0x7f64f0e76200], txn-recover: Main recovery loop: starting at 4/27008
+2020-03-18T20:23:31.134-0500 I STORAGE  [initandlisten] WiredTiger message [1584581011:134338][42753:0x7f64f0e76200], txn-recover: Recovering log 4 through 5
+2020-03-18T20:23:31.200-0500 I STORAGE  [initandlisten] WiredTiger message [1584581011:200473][42753:0x7f64f0e76200], txn-recover: Recovering log 5 through 5
+2020-03-18T20:23:31.247-0500 I STORAGE  [initandlisten] WiredTiger message [1584581011:247125][42753:0x7f64f0e76200], txn-recover: Set global recovery timestamp: 0
+2020-03-18T20:23:31.281-0500 I CONTROL  [initandlisten] 
+2020-03-18T20:23:31.281-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-03-18T20:23:31.281-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-03-18T20:23:31.281-0500 I CONTROL  [initandlisten] 
+2020-03-18T20:23:31.282-0500 I CONTROL  [initandlisten] 
+2020-03-18T20:23:31.282-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-18T20:23:31.282-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-18T20:23:31.282-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-18T20:23:31.282-0500 I CONTROL  [initandlisten] 
+2020-03-18T20:23:31.295-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-03-18T20:23:31.295-0500 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-03-18T20:23:31.488-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5869 #1 (1 connection now open)
+2020-03-18T20:23:31.615-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5868 #2 (2 connections now open)
+2020-03-18T20:23:31.628-0500 I NETWORK  [conn2] received client metadata from 47.32.0.82:5868 conn2: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:23:34.133-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5873 #3 (3 connections now open)
+2020-03-18T20:23:34.140-0500 I NETWORK  [conn3] received client metadata from 47.32.0.82:5873 conn3: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:23:37.074-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5876 #4 (4 connections now open)
+2020-03-18T20:23:37.074-0500 I NETWORK  [conn4] received client metadata from 47.32.0.82:5876 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:23:37.123-0500 I STORAGE  [conn4] createCollection: AppNull.flashQuestions with generated UUID: 14dabbdf-dac1-452b-8d1b-9f028b3bef7e
+2020-03-18T20:23:49.854-0500 I STORAGE  [conn4] createCollection: AppNull.technicalQuestions with generated UUID: 66d245ae-6843-40bb-bd40-66d8238d0848
+2020-03-18T20:23:54.446-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5888 #5 (5 connections now open)
+2020-03-18T20:23:54.453-0500 I NETWORK  [conn5] received client metadata from 47.32.0.82:5888 conn5: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:24:01.077-0500 I NETWORK  [conn1] end connection 47.32.0.82:5869 (4 connections now open)
+2020-03-18T20:24:02.991-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5896 #6 (5 connections now open)
+2020-03-18T20:24:02.997-0500 I NETWORK  [conn6] received client metadata from 47.32.0.82:5896 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:24:05.328-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5898 #7 (6 connections now open)
+2020-03-18T20:24:05.335-0500 I NETWORK  [conn7] received client metadata from 47.32.0.82:5898 conn7: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:24:05.445-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5899 #8 (7 connections now open)
+2020-03-18T20:24:30.074-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5913 #9 (8 connections now open)
+2020-03-18T20:24:30.080-0500 I NETWORK  [conn9] received client metadata from 47.32.0.82:5913 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:24:34.153-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5916 #10 (9 connections now open)
+2020-03-18T20:24:34.153-0500 I NETWORK  [conn10] received client metadata from 47.32.0.82:5916 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:24:54.477-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5930 #11 (10 connections now open)
+2020-03-18T20:24:54.484-0500 I NETWORK  [conn11] received client metadata from 47.32.0.82:5930 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:25:03.053-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5938 #12 (11 connections now open)
+2020-03-18T20:25:03.054-0500 I NETWORK  [conn12] received client metadata from 47.32.0.82:5938 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:25:14.305-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5946 #13 (12 connections now open)
+2020-03-18T20:25:14.305-0500 I NETWORK  [conn13] received client metadata from 47.32.0.82:5946 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:25:59.302-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5975 #14 (13 connections now open)
+2020-03-18T20:25:59.309-0500 I NETWORK  [conn14] received client metadata from 47.32.0.82:5975 conn14: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:25:59.502-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5976 #15 (14 connections now open)
+2020-03-18T20:25:59.509-0500 I NETWORK  [conn15] received client metadata from 47.32.0.82:5976 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:00.997-0500 I NETWORK  [conn2] end connection 47.32.0.82:5868 (13 connections now open)
+2020-03-18T20:26:01.030-0500 I NETWORK  [conn9] end connection 47.32.0.82:5913 (12 connections now open)
+2020-03-18T20:26:01.405-0500 I NETWORK  [conn14] end connection 47.32.0.82:5975 (11 connections now open)
+2020-03-18T20:26:01.436-0500 I NETWORK  [conn15] end connection 47.32.0.82:5976 (10 connections now open)
+2020-03-18T20:26:02.162-0500 I NETWORK  [conn6] end connection 47.32.0.82:5896 (9 connections now open)
+2020-03-18T20:26:02.200-0500 I NETWORK  [conn12] end connection 47.32.0.82:5938 (8 connections now open)
+2020-03-18T20:26:03.074-0500 I NETWORK  [conn5] end connection 47.32.0.82:5888 (7 connections now open)
+2020-03-18T20:26:03.104-0500 I NETWORK  [conn11] end connection 47.32.0.82:5930 (6 connections now open)
+2020-03-18T20:26:03.889-0500 I NETWORK  [conn3] end connection 47.32.0.82:5873 (5 connections now open)
+2020-03-18T20:26:03.922-0500 I NETWORK  [conn10] end connection 47.32.0.82:5916 (4 connections now open)
+2020-03-18T20:26:05.191-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5979 #16 (5 connections now open)
+2020-03-18T20:26:05.197-0500 I NETWORK  [conn16] received client metadata from 47.32.0.82:5979 conn16: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:05.408-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5981 #17 (6 connections now open)
+2020-03-18T20:26:05.409-0500 I NETWORK  [conn17] received client metadata from 47.32.0.82:5981 conn17: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:14.787-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5984 #18 (7 connections now open)
+2020-03-18T20:26:14.793-0500 I NETWORK  [conn18] received client metadata from 47.32.0.82:5984 conn18: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:14.981-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5985 #19 (8 connections now open)
+2020-03-18T20:26:14.988-0500 I NETWORK  [conn19] received client metadata from 47.32.0.82:5985 conn19: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:17.577-0500 I NETWORK  [conn18] end connection 47.32.0.82:5984 (7 connections now open)
+2020-03-18T20:26:17.615-0500 I NETWORK  [conn19] end connection 47.32.0.82:5985 (6 connections now open)
+2020-03-18T20:26:22.223-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5987 #20 (7 connections now open)
+2020-03-18T20:26:22.230-0500 I NETWORK  [conn20] received client metadata from 47.32.0.82:5987 conn20: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:22.434-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5988 #21 (8 connections now open)
+2020-03-18T20:26:22.441-0500 I NETWORK  [conn21] received client metadata from 47.32.0.82:5988 conn21: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:23.435-0500 I NETWORK  [conn20] end connection 47.32.0.82:5987 (7 connections now open)
+2020-03-18T20:26:23.473-0500 I NETWORK  [conn21] end connection 47.32.0.82:5988 (6 connections now open)
+2020-03-18T20:26:30.977-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5995 #22 (7 connections now open)
+2020-03-18T20:26:30.978-0500 I NETWORK  [conn22] received client metadata from 47.32.0.82:5995 conn22: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:31.169-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:5996 #23 (8 connections now open)
+2020-03-18T20:26:31.169-0500 I NETWORK  [conn23] received client metadata from 47.32.0.82:5996 conn23: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:26:34.499-0500 I NETWORK  [conn22] end connection 47.32.0.82:5995 (7 connections now open)
+2020-03-18T20:26:34.531-0500 I NETWORK  [conn23] end connection 47.32.0.82:5996 (6 connections now open)
+2020-03-18T20:27:18.582-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6025 #24 (7 connections now open)
+2020-03-18T20:27:18.583-0500 I NETWORK  [conn24] received client metadata from 47.32.0.82:6025 conn24: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:27:18.796-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6026 #25 (8 connections now open)
+2020-03-18T20:27:18.796-0500 I NETWORK  [conn25] received client metadata from 47.32.0.82:6026 conn25: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:27:35.158-0500 I NETWORK  [conn24] end connection 47.32.0.82:6025 (7 connections now open)
+2020-03-18T20:27:35.188-0500 I NETWORK  [conn25] end connection 47.32.0.82:6026 (6 connections now open)
+2020-03-18T20:27:50.207-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6045 #26 (7 connections now open)
+2020-03-18T20:27:50.214-0500 I NETWORK  [conn26] received client metadata from 47.32.0.82:6045 conn26: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:27:50.404-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6046 #27 (8 connections now open)
+2020-03-18T20:27:50.404-0500 I NETWORK  [conn27] received client metadata from 47.32.0.82:6046 conn27: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T20:27:53.675-0500 I NETWORK  [conn26] end connection 47.32.0.82:6045 (7 connections now open)
+2020-03-18T20:27:53.708-0500 I NETWORK  [conn27] end connection 47.32.0.82:6046 (6 connections now open)
+2020-03-18T20:33:03.156-0500 I NETWORK  [conn7] end connection 47.32.0.82:5898 (5 connections now open)
+2020-03-18T20:33:03.156-0500 I NETWORK  [conn8] end connection 47.32.0.82:5899 (4 connections now open)
+2020-03-18T20:33:07.574-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6229 #28 (5 connections now open)
+2020-03-18T20:33:07.581-0500 I NETWORK  [conn28] received client metadata from 47.32.0.82:6229 conn28: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T20:33:07.689-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:6230 #29 (6 connections now open)
+2020-03-18T21:19:40.788-0500 I NETWORK  [conn29] end connection 47.32.0.82:6230 (5 connections now open)
+2020-03-18T21:19:40.793-0500 I NETWORK  [conn28] end connection 47.32.0.82:6229 (4 connections now open)
+2020-03-18T21:19:49.292-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8353 #30 (5 connections now open)
+2020-03-18T21:19:49.300-0500 I NETWORK  [conn30] received client metadata from 47.32.0.82:8353 conn30: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T21:19:49.401-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8354 #31 (6 connections now open)
+2020-03-18T21:26:29.618-0500 I NETWORK  [conn30] end connection 47.32.0.82:8353 (5 connections now open)
+2020-03-18T21:26:29.618-0500 I NETWORK  [conn31] end connection 47.32.0.82:8354 (4 connections now open)
+2020-03-18T21:26:35.283-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8639 #32 (5 connections now open)
+2020-03-18T21:26:35.291-0500 I NETWORK  [conn32] received client metadata from 47.32.0.82:8639 conn32: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T21:26:35.390-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8640 #33 (6 connections now open)
+2020-03-18T21:29:52.706-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8772 #34 (7 connections now open)
+2020-03-18T21:29:52.730-0500 I NETWORK  [conn34] received client metadata from 47.32.0.82:8772 conn34: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:29:52.945-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8773 #35 (8 connections now open)
+2020-03-18T21:29:52.961-0500 I NETWORK  [conn35] received client metadata from 47.32.0.82:8773 conn35: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:29:55.459-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8776 #36 (9 connections now open)
+2020-03-18T21:29:55.460-0500 I NETWORK  [conn36] received client metadata from 47.32.0.82:8776 conn36: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:29:55.670-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8777 #37 (10 connections now open)
+2020-03-18T21:29:55.671-0500 I NETWORK  [conn37] received client metadata from 47.32.0.82:8777 conn37: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:29:56.548-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8778 #38 (11 connections now open)
+2020-03-18T21:29:56.548-0500 I NETWORK  [conn38] received client metadata from 47.32.0.82:8778 conn38: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:29:56.756-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8779 #39 (12 connections now open)
+2020-03-18T21:29:56.764-0500 I NETWORK  [conn39] received client metadata from 47.32.0.82:8779 conn39: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:33:30.030-0500 I NETWORK  [conn32] end connection 47.32.0.82:8639 (11 connections now open)
+2020-03-18T21:33:30.030-0500 I NETWORK  [conn33] end connection 47.32.0.82:8640 (10 connections now open)
+2020-03-18T21:33:35.088-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8961 #40 (11 connections now open)
+2020-03-18T21:33:35.095-0500 I NETWORK  [conn40] received client metadata from 47.32.0.82:8961 conn40: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.18362" }, platform: "Node.js v12.14.1, LE, mongodb-core: 3.0.4" }
+2020-03-18T21:33:35.213-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:8963 #41 (12 connections now open)
+2020-03-18T21:36:45.063-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37712 #42 (13 connections now open)
+2020-03-18T21:36:45.070-0500 I NETWORK  [conn42] received client metadata from 131.212.41.69:37712 conn42: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-88-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 3.0.4" }
+2020-03-18T21:36:45.091-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37714 #43 (14 connections now open)
+2020-03-18T21:37:17.285-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9125 #44 (15 connections now open)
+2020-03-18T21:37:17.286-0500 I NETWORK  [conn44] received client metadata from 47.32.0.82:9125 conn44: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:17.485-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9126 #45 (16 connections now open)
+2020-03-18T21:37:17.486-0500 I NETWORK  [conn45] received client metadata from 47.32.0.82:9126 conn45: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:18.472-0500 I NETWORK  [conn44] end connection 47.32.0.82:9125 (15 connections now open)
+2020-03-18T21:37:18.505-0500 I NETWORK  [conn45] end connection 47.32.0.82:9126 (14 connections now open)
+2020-03-18T21:37:19.310-0500 I NETWORK  [conn38] end connection 47.32.0.82:8778 (13 connections now open)
+2020-03-18T21:37:19.342-0500 I NETWORK  [conn39] end connection 47.32.0.82:8779 (12 connections now open)
+2020-03-18T21:37:19.766-0500 I NETWORK  [conn36] end connection 47.32.0.82:8776 (11 connections now open)
+2020-03-18T21:37:19.814-0500 I NETWORK  [conn37] end connection 47.32.0.82:8777 (10 connections now open)
+2020-03-18T21:37:20.618-0500 I NETWORK  [conn34] end connection 47.32.0.82:8772 (9 connections now open)
+2020-03-18T21:37:20.666-0500 I NETWORK  [conn35] end connection 47.32.0.82:8773 (8 connections now open)
+2020-03-18T21:37:21.380-0500 I NETWORK  [conn16] end connection 47.32.0.82:5979 (7 connections now open)
+2020-03-18T21:37:21.418-0500 I NETWORK  [conn17] end connection 47.32.0.82:5981 (6 connections now open)
+2020-03-18T21:37:50.046-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9144 #46 (7 connections now open)
+2020-03-18T21:37:50.061-0500 I NETWORK  [conn46] received client metadata from 47.32.0.82:9144 conn46: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:50.259-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9145 #47 (8 connections now open)
+2020-03-18T21:37:50.267-0500 I NETWORK  [conn47] received client metadata from 47.32.0.82:9145 conn47: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:52.000-0500 I NETWORK  [conn46] end connection 47.32.0.82:9144 (7 connections now open)
+2020-03-18T21:37:52.032-0500 I NETWORK  [conn47] end connection 47.32.0.82:9145 (6 connections now open)
+2020-03-18T21:37:57.465-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9151 #48 (7 connections now open)
+2020-03-18T21:37:57.465-0500 I NETWORK  [conn48] received client metadata from 47.32.0.82:9151 conn48: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:57.694-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:9152 #49 (8 connections now open)
+2020-03-18T21:37:57.694-0500 I NETWORK  [conn49] received client metadata from 47.32.0.82:9152 conn49: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-18T21:37:59.861-0500 I NETWORK  [conn48] end connection 47.32.0.82:9151 (7 connections now open)
+2020-03-18T21:37:59.893-0500 I NETWORK  [conn49] end connection 47.32.0.82:9152 (6 connections now open)
+2020-03-18T21:51:57.814-0500 I NETWORK  [conn43] end connection 131.212.41.69:37714 (5 connections now open)
+2020-03-18T21:51:57.814-0500 I NETWORK  [conn42] end connection 131.212.41.69:37712 (4 connections now open)
+2020-03-18T21:51:58.869-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-03-18T21:51:58.869-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-03-18T21:51:58.869-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-03-18T21:51:58.869-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-03-18T21:51:58.881-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-03-18T21:51:58.968-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-03-18T21:51:58.969-0500 I CONTROL  [signalProcessingThread] now exiting
+2020-03-18T21:51:58.969-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-03-19T13:34:54.239-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:34:54.246-0500 [initandlisten] MongoDB starting : pid=40567 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:34:54.246-0500 [initandlisten] 
+2020-03-19T13:34:54.246-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:34:54.246-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:34:54.246-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:34:54.247-0500 [initandlisten] 
+2020-03-19T13:34:54.247-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:34:54.247-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:34:54.247-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:34:54.247-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:34:54.247-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:34:54.247-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:34:54.251-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:34:54.251-0500 [initandlisten] dbexit: 
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:34:54.251-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:34:54.251-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:34:54.251-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:35:19.293-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:35:19.300-0500 [initandlisten] MongoDB starting : pid=40589 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:35:19.301-0500 [initandlisten] 
+2020-03-19T13:35:19.301-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:35:19.301-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:35:19.301-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:35:19.301-0500 [initandlisten] 
+2020-03-19T13:35:19.301-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:35:19.301-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:35:19.301-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:35:19.301-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:35:19.301-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:35:19.301-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:35:19.302-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:35:19.302-0500 [initandlisten] dbexit: 
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:35:19.302-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:35:19.302-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:35:19.302-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:35:45.483-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:35:45.492-0500 [initandlisten] MongoDB starting : pid=40595 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:35:45.492-0500 [initandlisten] 
+2020-03-19T13:35:45.492-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:35:45.492-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:35:45.492-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:35:45.492-0500 [initandlisten] 
+2020-03-19T13:35:45.492-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:35:45.492-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:35:45.492-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:35:45.492-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:35:45.492-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:35:45.493-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:35:45.493-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:35:45.493-0500 [initandlisten] dbexit: 
+2020-03-19T13:35:45.493-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:35:45.493-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:35:45.493-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:35:45.494-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:35:45.494-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:35:45.494-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:35:45.494-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:35:45.494-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:35:45.494-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:36:50.166-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:36:50.175-0500 [initandlisten] MongoDB starting : pid=40640 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:36:50.176-0500 [initandlisten] 
+2020-03-19T13:36:50.176-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:36:50.176-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:36:50.176-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:36:50.176-0500 [initandlisten] 
+2020-03-19T13:36:50.176-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:36:50.176-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:36:50.176-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:36:50.176-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:36:50.176-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:36:50.176-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:36:50.177-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:36:50.177-0500 [initandlisten] dbexit: 
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:36:50.177-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:36:50.177-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:36:50.177-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:37:03.714-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:37:03.723-0500 [initandlisten] MongoDB starting : pid=40648 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:37:03.724-0500 [initandlisten] 
+2020-03-19T13:37:03.724-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:37:03.724-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:37:03.724-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:37:03.724-0500 [initandlisten] 
+2020-03-19T13:37:03.724-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:37:03.724-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:37:03.724-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:37:03.724-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:37:03.724-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:37:03.724-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:37:03.725-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:37:03.725-0500 [initandlisten] dbexit: 
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:37:03.725-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:37:03.725-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:37:03.725-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:37:59.550-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:37:59.557-0500 [initandlisten] MongoDB starting : pid=40681 port=9158 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:37:59.557-0500 [initandlisten] 
+2020-03-19T13:37:59.557-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:37:59.557-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:37:59.557-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:37:59.557-0500 [initandlisten] 
+2020-03-19T13:37:59.557-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:37:59.557-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:37:59.557-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:37:59.558-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:37:59.558-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:37:59.558-0500 [initandlisten] options: { config: "mongod.conf", net: { port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:37:59.558-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:37:59.558-0500 [initandlisten] dbexit: 
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:37:59.558-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:37:59.558-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:37:59.558-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:38:32.843-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:38:32.850-0500 [initandlisten] MongoDB starting : pid=40712 port=12584 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:38:32.851-0500 [initandlisten] 
+2020-03-19T13:38:32.851-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:38:32.851-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:38:32.851-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:38:32.851-0500 [initandlisten] 
+2020-03-19T13:38:32.851-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:38:32.851-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:38:32.851-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:38:32.851-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:38:32.851-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:38:32.851-0500 [initandlisten] options: { config: "mongod.conf", net: { port: 12584 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:38:32.851-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:38:32.851-0500 [initandlisten] dbexit: 
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:38:32.851-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:38:32.851-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:38:32.851-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:39:12.649-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:39:12.658-0500 [initandlisten] MongoDB starting : pid=40766 port=12584 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:39:12.658-0500 [initandlisten] 
+2020-03-19T13:39:12.658-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:39:12.658-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:39:12.658-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:39:12.658-0500 [initandlisten] 
+2020-03-19T13:39:12.658-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:39:12.659-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:39:12.659-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:39:12.659-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:39:12.659-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:39:12.659-0500 [initandlisten] options: { config: "mongod.conf", net: { port: 12584 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:39:12.660-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:39:12.660-0500 [initandlisten] dbexit: 
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:39:12.660-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:39:12.660-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:39:12.660-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:40:06.364-0500 ***** SERVER RESTARTED *****
+2020-03-19T13:40:06.371-0500 [initandlisten] MongoDB starting : pid=40777 port=12584 dbpath=./mongo 64-bit host=akka
+2020-03-19T13:40:06.371-0500 [initandlisten] 
+2020-03-19T13:40:06.371-0500 [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:40:06.371-0500 [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:40:06.371-0500 [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:40:06.371-0500 [initandlisten] 
+2020-03-19T13:40:06.371-0500 [initandlisten] db version v2.6.10
+2020-03-19T13:40:06.371-0500 [initandlisten] git version: nogitversion
+2020-03-19T13:40:06.371-0500 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2020-03-19T13:40:06.371-0500 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2020-03-19T13:40:06.371-0500 [initandlisten] allocator: tcmalloc
+2020-03-19T13:40:06.371-0500 [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12584 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:40:06.372-0500 [initandlisten] exception in initAndListen: 28574 Cannot start server. Detected data files in ./mongo created by storage engine 'wiredTiger'. The configured storage engine is 'mmapv1'., terminating
+2020-03-19T13:40:06.372-0500 [initandlisten] dbexit: 
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: going to close listening sockets...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: going to flush diaglog...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: going to close sockets...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: waiting for fs preallocator...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: lock for final commit...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: final commit...
+2020-03-19T13:40:06.372-0500 [initandlisten] shutdown: closing all files...
+2020-03-19T13:40:06.372-0500 [initandlisten] closeAllFiles() finished
+2020-03-19T13:40:06.372-0500 [initandlisten] dbexit: really exiting now
+2020-03-19T13:41:38.567-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] MongoDB starting : pid=7065 port=12584 dbpath=./mongo 64-bit host=ukko
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] modules: none
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] build environment:
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-19T13:41:38.572-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 12584 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:41:38.574-0500 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-03-19T13:41:38.576-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-03-19T13:41:40.525-0500 I STORAGE  [initandlisten] WiredTiger message [1584643300:525059][7065:0x7f94df936200], txn-recover: Main recovery loop: starting at 5/45184
+2020-03-19T13:41:40.649-0500 I STORAGE  [initandlisten] WiredTiger message [1584643300:648999][7065:0x7f94df936200], txn-recover: Recovering log 5 through 6
+2020-03-19T13:41:40.728-0500 I STORAGE  [initandlisten] WiredTiger message [1584643300:728504][7065:0x7f94df936200], txn-recover: Recovering log 6 through 6
+2020-03-19T13:41:40.778-0500 I STORAGE  [initandlisten] WiredTiger message [1584643300:778412][7065:0x7f94df936200], txn-recover: Set global recovery timestamp: 0
+2020-03-19T13:41:40.820-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:41:40.820-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-03-19T13:41:40.820-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-03-19T13:41:40.820-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:41:40.821-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:41:40.821-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:41:40.821-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:41:40.821-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:41:40.821-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:41:40.840-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-03-19T13:41:40.841-0500 I NETWORK  [initandlisten] waiting for connections on port 12584
+2020-03-19T13:41:50.743-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-03-19T13:41:50.744-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-03-19T13:41:50.744-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-12584.sock
+2020-03-19T13:41:50.744-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-03-19T13:41:50.750-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-03-19T13:41:50.855-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-03-19T13:41:50.856-0500 I CONTROL  [signalProcessingThread] now exiting
+2020-03-19T13:41:50.856-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-03-19T13:42:18.368-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] MongoDB starting : pid=7134 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] modules: none
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] build environment:
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-19T13:42:18.375-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:42:18.377-0500 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-03-19T13:42:18.377-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-03-19T13:42:19.875-0500 I STORAGE  [initandlisten] WiredTiger message [1584643339:875484][7134:0x7fe8f5d7d200], txn-recover: Main recovery loop: starting at 6/5248
+2020-03-19T13:42:20.002-0500 I STORAGE  [initandlisten] WiredTiger message [1584643340:2345][7134:0x7fe8f5d7d200], txn-recover: Recovering log 6 through 7
+2020-03-19T13:42:20.091-0500 I STORAGE  [initandlisten] WiredTiger message [1584643340:91082][7134:0x7fe8f5d7d200], txn-recover: Recovering log 7 through 7
+2020-03-19T13:42:20.146-0500 I STORAGE  [initandlisten] WiredTiger message [1584643340:146818][7134:0x7fe8f5d7d200], txn-recover: Set global recovery timestamp: 0
+2020-03-19T13:42:20.187-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:42:20.187-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-03-19T13:42:20.187-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-03-19T13:42:20.187-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:42:20.188-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:42:20.188-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:42:20.188-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:42:20.188-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:42:20.188-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:42:20.206-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-03-19T13:42:20.206-0500 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-03-19T13:42:22.299-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37908 #1 (1 connection now open)
+2020-03-19T13:42:22.305-0500 I NETWORK  [conn1] received client metadata from 131.212.41.69:37908 conn1: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-88-generic" }, platform: "Node.js v8.10.0, LE, mongodb-core: 3.0.4" }
+2020-03-19T13:42:22.325-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37910 #2 (2 connections now open)
+2020-03-19T13:42:30.712-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60631 #3 (3 connections now open)
+2020-03-19T13:42:30.719-0500 I NETWORK  [conn3] received client metadata from 47.32.0.82:60631 conn3: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:42:30.949-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60632 #4 (4 connections now open)
+2020-03-19T13:42:30.950-0500 I NETWORK  [conn4] received client metadata from 47.32.0.82:60632 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:42:37.216-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60635 #5 (5 connections now open)
+2020-03-19T13:42:37.217-0500 I NETWORK  [conn5] received client metadata from 47.32.0.82:60635 conn5: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:42:37.417-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60636 #6 (6 connections now open)
+2020-03-19T13:42:37.429-0500 I NETWORK  [conn6] received client metadata from 47.32.0.82:60636 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:42:39.148-0500 I NETWORK  [conn5] end connection 47.32.0.82:60635 (5 connections now open)
+2020-03-19T13:42:39.177-0500 I NETWORK  [conn6] end connection 47.32.0.82:60636 (4 connections now open)
+2020-03-19T13:45:00.721-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60751 #7 (5 connections now open)
+2020-03-19T13:45:00.727-0500 I NETWORK  [conn7] received client metadata from 47.32.0.82:60751 conn7: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:00.909-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60752 #8 (6 connections now open)
+2020-03-19T13:45:00.918-0500 I NETWORK  [conn8] received client metadata from 47.32.0.82:60752 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:03.411-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60754 #9 (7 connections now open)
+2020-03-19T13:45:03.415-0500 I NETWORK  [conn9] received client metadata from 47.32.0.82:60754 conn9: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:03.611-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60755 #10 (8 connections now open)
+2020-03-19T13:45:03.623-0500 I NETWORK  [conn10] received client metadata from 47.32.0.82:60755 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:23.945-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60771 #11 (9 connections now open)
+2020-03-19T13:45:23.952-0500 I NETWORK  [conn11] received client metadata from 47.32.0.82:60771 conn11: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:24.127-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60772 #12 (10 connections now open)
+2020-03-19T13:45:24.138-0500 I NETWORK  [conn12] received client metadata from 47.32.0.82:60772 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:25.364-0500 I NETWORK  [conn11] end connection 47.32.0.82:60771 (9 connections now open)
+2020-03-19T13:45:25.392-0500 I NETWORK  [conn12] end connection 47.32.0.82:60772 (8 connections now open)
+2020-03-19T13:45:35.898-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60775 #13 (9 connections now open)
+2020-03-19T13:45:35.915-0500 I NETWORK  [conn13] received client metadata from 47.32.0.82:60775 conn13: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:36.109-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60776 #14 (10 connections now open)
+2020-03-19T13:45:36.115-0500 I NETWORK  [conn14] received client metadata from 47.32.0.82:60776 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:45:38.311-0500 I NETWORK  [conn13] end connection 47.32.0.82:60775 (9 connections now open)
+2020-03-19T13:45:38.343-0500 I NETWORK  [conn14] end connection 47.32.0.82:60776 (8 connections now open)
+2020-03-19T13:45:39.623-0500 I NETWORK  [conn7] end connection 47.32.0.82:60751 (7 connections now open)
+2020-03-19T13:45:39.653-0500 I NETWORK  [conn8] end connection 47.32.0.82:60752 (6 connections now open)
+2020-03-19T13:46:26.582-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60803 #15 (7 connections now open)
+2020-03-19T13:46:26.582-0500 I NETWORK  [conn15] received client metadata from 47.32.0.82:60803 conn15: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:46:26.781-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:60804 #16 (8 connections now open)
+2020-03-19T13:46:26.782-0500 I NETWORK  [conn16] received client metadata from 47.32.0.82:60804 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:46:27.541-0500 I NETWORK  [conn9] end connection 47.32.0.82:60754 (7 connections now open)
+2020-03-19T13:46:27.571-0500 I NETWORK  [conn10] end connection 47.32.0.82:60755 (6 connections now open)
+2020-03-19T13:48:45.330-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-03-19T13:48:45.330-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-03-19T13:48:45.331-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-03-19T13:48:45.331-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-03-19T13:48:45.339-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-03-19T13:48:45.403-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-03-19T13:48:45.404-0500 I CONTROL  [signalProcessingThread] now exiting
+2020-03-19T13:48:45.404-0500 I CONTROL  [signalProcessingThread] shutting down with code:0
+2020-03-19T13:48:48.226-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] MongoDB starting : pid=7371 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] modules: none
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] build environment:
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-19T13:48:48.233-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:48:48.235-0500 I -        [initandlisten] Detected data files in ./mongo created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-03-19T13:48:48.236-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=257440M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2020-03-19T13:48:49.629-0500 I STORAGE  [initandlisten] WiredTiger message [1584643729:629328][7371:0x7f06127e9200], txn-recover: Main recovery loop: starting at 7/11520
+2020-03-19T13:48:49.800-0500 I STORAGE  [initandlisten] WiredTiger message [1584643729:799974][7371:0x7f06127e9200], txn-recover: Recovering log 7 through 8
+2020-03-19T13:48:49.912-0500 I STORAGE  [initandlisten] WiredTiger message [1584643729:912087][7371:0x7f06127e9200], txn-recover: Recovering log 8 through 8
+2020-03-19T13:48:49.971-0500 I STORAGE  [initandlisten] WiredTiger message [1584643729:971314][7371:0x7f06127e9200], txn-recover: Set global recovery timestamp: 0
+2020-03-19T13:48:50.013-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:48:50.013-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-03-19T13:48:50.013-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-03-19T13:48:50.013-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:48:50.014-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:48:50.014-0500 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2020-03-19T13:48:50.014-0500 I CONTROL  [initandlisten] **          We suggest launching mongod like this to avoid performance problems:
+2020-03-19T13:48:50.014-0500 I CONTROL  [initandlisten] **              numactl --interleave=all mongod [other options]
+2020-03-19T13:48:50.014-0500 I CONTROL  [initandlisten] 
+2020-03-19T13:48:50.033-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './mongo/diagnostic.data'
+2020-03-19T13:48:50.033-0500 I NETWORK  [initandlisten] waiting for connections on port 9158
+2020-03-19T13:48:50.432-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37920 #1 (1 connection now open)
+2020-03-19T13:48:55.712-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] MongoDB starting : pid=7400 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] modules: none
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] build environment:
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-19T13:48:55.717-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:48:55.719-0500 I STORAGE  [initandlisten] exception in initAndListen: DBPathInUse: Unable to lock the lock file: ./mongo/mongod.lock (Resource temporarily unavailable). Another mongod instance is already running on the ./mongo directory, terminating
+2020-03-19T13:48:55.719-0500 I CONTROL  [initandlisten] now exiting
+2020-03-19T13:48:55.719-0500 I CONTROL  [initandlisten] shutting down with code:100
+2020-03-19T13:48:59.454-0500 I CONTROL  [main] ***** SERVER RESTARTED *****
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] MongoDB starting : pid=7403 port=9158 dbpath=./mongo 64-bit host=ukko
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] db version v3.6.9
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] git version: 167861a164723168adfaaa866f310cb94010428f
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] modules: none
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] build environment:
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-03-19T13:48:59.464-0500 I CONTROL  [initandlisten] options: { config: "mongod.conf", net: { bindIp: "0.0.0.0", port: 9158 }, setParameter: { enableLocalhostAuthBypass: "false" }, storage: { dbPath: "./mongo", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./mongod.log" } }
+2020-03-19T13:48:59.465-0500 I STORAGE  [initandlisten] exception in initAndListen: DBPathInUse: Unable to lock the lock file: ./mongo/mongod.lock (Resource temporarily unavailable). Another mongod instance is already running on the ./mongo directory, terminating
+2020-03-19T13:48:59.465-0500 I CONTROL  [initandlisten] now exiting
+2020-03-19T13:48:59.465-0500 I CONTROL  [initandlisten] shutting down with code:100
+2020-03-19T13:50:07.013-0500 I NETWORK  [listener] connection accepted from 131.212.41.69:37922 #2 (2 connections now open)
+2020-03-19T13:50:26.973-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:61030 #3 (3 connections now open)
+2020-03-19T13:50:26.973-0500 I NETWORK  [conn3] received client metadata from 47.32.0.82:61030 conn3: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:50:31.169-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:61032 #4 (4 connections now open)
+2020-03-19T13:50:31.169-0500 I NETWORK  [conn4] received client metadata from 47.32.0.82:61032 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:51:27.021-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:61088 #5 (5 connections now open)
+2020-03-19T13:51:27.027-0500 I NETWORK  [conn5] received client metadata from 47.32.0.82:61088 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T13:51:31.193-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:61091 #6 (6 connections now open)
+2020-03-19T13:51:31.200-0500 I NETWORK  [conn6] received client metadata from 47.32.0.82:61091 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:23:47.372-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62373 #7 (7 connections now open)
+2020-03-19T14:23:47.379-0500 I NETWORK  [conn7] received client metadata from 47.32.0.82:62373 conn7: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:23:47.575-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:51438 #8 (8 connections now open)
+2020-03-19T14:23:47.581-0500 I NETWORK  [conn8] received client metadata from 47.32.0.82:51438 conn8: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:24:03.726-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62383 #9 (9 connections now open)
+2020-03-19T14:24:03.734-0500 I NETWORK  [conn9] received client metadata from 47.32.0.82:62383 conn9: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:24:03.934-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:51417 #10 (10 connections now open)
+2020-03-19T14:24:03.934-0500 I NETWORK  [conn10] received client metadata from 47.32.0.82:51417 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:26:54.410-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62469 #11 (11 connections now open)
+2020-03-19T14:26:54.417-0500 I NETWORK  [conn11] received client metadata from 47.32.0.82:62469 conn11: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:26:54.620-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62471 #12 (12 connections now open)
+2020-03-19T14:26:54.620-0500 I NETWORK  [conn12] received client metadata from 47.32.0.82:62471 conn12: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:28:00.979-0500 I NETWORK  [conn9] end connection 47.32.0.82:62383 (11 connections now open)
+2020-03-19T14:28:01.021-0500 I NETWORK  [conn10] end connection 47.32.0.82:51417 (10 connections now open)
+2020-03-19T14:28:03.095-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62511 #13 (11 connections now open)
+2020-03-19T14:28:03.095-0500 I NETWORK  [conn13] received client metadata from 47.32.0.82:62511 conn13: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:28:03.294-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62512 #14 (12 connections now open)
+2020-03-19T14:28:03.295-0500 I NETWORK  [conn14] received client metadata from 47.32.0.82:62512 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:28:26.154-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62525 #15 (13 connections now open)
+2020-03-19T14:28:26.155-0500 I NETWORK  [conn15] received client metadata from 47.32.0.82:62525 conn15: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:28:26.360-0500 I NETWORK  [listener] connection accepted from 47.32.0.82:62526 #16 (14 connections now open)
+2020-03-19T14:28:26.365-0500 I NETWORK  [conn16] received client metadata from 47.32.0.82:62526 conn16: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.5-17-gd808df2233" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2020-03-19T14:28:27.633-0500 I NETWORK  [conn13] end connection 47.32.0.82:62511 (13 connections now open)
+2020-03-19T14:28:27.672-0500 I NETWORK  [conn14] end connection 47.32.0.82:62512 (12 connections now open)
+2020-03-19T14:28:29.019-0500 I NETWORK  [conn11] end connection 47.32.0.82:62469 (11 connections now open)
+2020-03-19T14:28:29.058-0500 I NETWORK  [conn12] end connection 47.32.0.82:62471 (10 connections now open)
+2020-03-19T14:28:29.836-0500 I NETWORK  [conn7] end connection 47.32.0.82:62373 (9 connections now open)
+2020-03-19T14:28:29.867-0500 I NETWORK  [conn8] end connection 47.32.0.82:51438 (8 connections now open)
+2020-03-19T14:28:30.290-0500 I NETWORK  [conn15] end connection 47.32.0.82:62525 (7 connections now open)
+2020-03-19T14:28:30.323-0500 I NETWORK  [conn16] end connection 47.32.0.82:62526 (6 connections now open)
+2020-03-19T14:28:32.123-0500 I NETWORK  [conn3] end connection 47.32.0.82:61030 (5 connections now open)
+2020-03-19T14:28:32.160-0500 I NETWORK  [conn5] end connection 47.32.0.82:61088 (4 connections now open)
+2020-03-19T14:28:55.320-0500 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt), will terminate after current cmd ends
+2020-03-19T14:28:55.320-0500 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-03-19T14:28:55.320-0500 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-9158.sock
+2020-03-19T14:28:55.321-0500 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-03-19T14:28:55.327-0500 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-03-19T14:28:55.434-0500 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-03-19T14:28:55.436-0500 I CONTROL  [signalProcessingThread] now exiting
+2020-03-19T14:28:55.436-0500 I CONTROL  [signalProcessingThread] shutting down with code:0

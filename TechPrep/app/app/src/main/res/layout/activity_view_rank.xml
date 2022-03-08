@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RankBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:isIndicator="false"
+        android:numStars="10"
+        android:rating="0"
+        android:stepSize="1"
+        app:layout_constraintBottom_toTopOf="@+id/displayCommentsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/viewUserCommentsButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickViewUserComments"
+        android:text="@string/view_user"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTextView"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:text="Select view admin or view user" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickClose"
+        android:text="@string/close"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/viewAdminCommentsButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickViewAdminComments"
+        android:text="@string/view_admin"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/displayCommentsTextView"
+        android:layout_width="395dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="124dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/closeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickNextQuestion"
+        android:text="@string/next_comment"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <Button
+        android:id="@+id/previousQuestionButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickPreviousQuestion"
+        android:text="@string/previous_comment"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <Button
+        android:id="@+id/rateQuestionButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMaroon"
+        android:onClick="onClickRankQuestion"
+        android:text="@string/rate_question"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/closeButton"
+        app:layout_constraintEnd_toStartOf="@+id/previousQuestionButton"
+        app:layout_constraintStart_toEndOf="@+id/nextQuestionButton"
+        app:layout_constraintTop_toBottomOf="@+id/displayCommentsTextView"
+        app:layout_constraintVertical_bias="0.144" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

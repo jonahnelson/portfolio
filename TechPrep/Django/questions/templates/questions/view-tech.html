@@ -1,0 +1,56 @@
+{% extends "questions/layout.html" %}
+{% load static %}
+{% block title %}
+View Tech
+{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+<link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+<link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <hr>
+    <h1>View Tech Cards</h1>
+    <div class="row">
+        <div class="col" style="width: 18rem;">
+        <p>This will view all Technical Cards for the Tech Prep Android Application</p>
+        </div>
+    </div>
+
+
+<div id="table">
+<md-table v-model="questions" md-card @md-selected="onSelect">
+  <section v-if="errored">
+    <h1 class="md-title">Could Not Connect To Server</h1>
+  </section>
+    <md-table-toolbar>
+      <h1 class="md-title">Technical Cards</h1>
+    </md-table-toolbar>
+
+    <md-table-row slot="md-table-row" slot-scope="{ item }">
+      <md-table-cell md-label="Question" md-sort-by="name">[[ item.question ]]</md-table-cell>
+      <md-table-cell md-label="User Rank" md-sort-by="gender">[[ item.userRank ]]</md-table-cell>
+      <md-table-cell md-label="Admin Rank" md-sort-by="title">[[ item.adminRank ]]</md-table-cell>
+
+    </md-table-row>
+  </md-table>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
+{% block script %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-material"></script>
+<script src="{% static 'questions/viewTech.js' %}"></script>
+<style lang="scss" scoped>
+    .md-table + .md-table {
+      margin-top: 16px
+    }
+  </style>
+{% endblock %}
