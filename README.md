@@ -1,1 +1,1 @@
-I've done a few other things of course (like software at my internship summer 2021 and some other things for coursework), but these are just a few projects whose code I had access to and that I found noteworthy enough
+I've done a few other things of course (like software at my internship summer 2021 and some other things for coursework), but these are just a few projects I've worked on whose code I had access to and that I found noteworthy enough
