@@ -1,4 +1,7 @@
 # Rushington Hub
+
+Video demo - https://www.youtube.com/watch?v=-kjQWYGg8UE
+
 When in the main directory, should be able to run with:
 npm install
 npm start
